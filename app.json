@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/reg/reg",
+    "pages/logs/logs",
+    "pages/indexs/indexs",
+    "pages/mycenter/mycenter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "星辰教育",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "list": [
+      {
+        "selectedIconPath": "imgs/node.png",
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/node.png"
+      },
+      {
+        "selectedIconPath": "imgs/node.png",
+        "pagePath": "pages/indexs/indexs",
+        "text": "首页2",
+        "iconPath": "imgs/node.png"
+      },
+      {
+        "selectedIconPath": "imgs/node.png",
+        "pagePath": "pages/indexs/indexs",
+        "text": "首页3",
+        "iconPath": "imgs/node.png"
+      },
+      {
+        "selectedIconPath": "imgs/node.png",
+        "pagePath": "pages/mycenter/mycenter",
+        "text": "我的",
+        "iconPath": "imgs/node.png"
+      }
+    ]
+  },
+  "debug": true
+}

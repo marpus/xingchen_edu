@@ -1,0 +1,17 @@
+/**app.wxss**/
+view, scroll-view{
+  display: flex;
+}
+input{
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  font-family: Arrial, MicrosoftYaHei Bold;
+} 
+.flex{
+  display: flex;
+}
+.col{
+  flex-direction: column;
+}

@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container col">
+  <view class="col header">
+    <view class="top">
+      <icon size="20" type='search'></icon>
+      <input placeholder='JS'></input>
+      <view> 
+        <navigator url="/pages/reg/reg" target="#">注册</navigator><span>|</span> 
+        <navigator url="/pages/login/login" target="#">登录</navigator>
+      </view>
+    </view>
+    <view class="nav">
+      <navigator wx:key="{{index}}" 
+       wx:for="{{nav}}" url="{{item.url}}">
+        {{item.title}}
+      </navigator> 
+    </view>
+    <view class="sub-nav">
+      <navigator wx:key="{{index}}" 
+       wx:for="{{subNav}}" url="{{item.url}}">
+       <view class="col">
+        <image src="{{item.img}}" mode='spaceFit'></image>
+        <text>{{item.title}}</text>
+       </view>
+      </navigator>
+    </view>
+    <scroll-view class="banner" scroll-x="true">
+      <view>
+        <navigator wx:for="{{banner}}" wx:key="{{index}}" url="">
+            <image src="{{item.img}}" mode='spaceFit'></image>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+  <view>
+    <view class="col cont">
+      <text>试听课程</text>
+      <scroll-view scroll-y="true" class="lession-list col">
+        <view wx:for="{{lsessionList}}" wx:key="{{index}}">
+          <navigator url="{{item.url}}" class="flex">
+            <image src="{{item.img}}" mode='spaceFit'></image>
+            <text>{{item.title}}</text>
+          </navigator>
+        </view> 
+      </scroll-view>
+    </view>
+  </view>
+</view>

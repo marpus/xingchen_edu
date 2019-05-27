@@ -1,0 +1,18 @@
+<!--pages/reg/reg.wxml-->
+<view class="container col">
+  <view class="title">
+    <text>
+      星辰教育·为你而学 
+    </text>
+  </view>
+  <view class="reg">
+    <view class="col">
+      <label wx:for="{{reg}}" wx:key="{{index}}" class="flex">
+        <text>{{item.label}}:</text>
+        <input class="{{item.size}}"></input>
+      </label>
+      <button>注册</button>
+      <button bindtap='navLogin'>登录</button>
+    </view>
+  </view>
+</view>

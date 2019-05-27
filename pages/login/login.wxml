@@ -1,0 +1,49 @@
+<!--pages/login/login.wxml-->
+<view class="container col">
+  <view class="title">
+    <text>
+      星辰教育·为你而学
+    </text>
+  </view>
+  <view wx:if="!loginMsg" class="login">
+    <view class="col">
+      <label wx:for="{{loginPassword}}" wx:key="{{index}}" class="flex">
+        <text>{{item.label}}:</text>
+        <input class="{{item.size}}"></input>
+        <view wx:if="{{item.btn}}">
+          <button wx:for="{{item.btns}}" wx:key="{{idx}}" wx:for-index="idx" wx:for-item="b">{{b.text}}</button>
+        </view>
+      </label>
+      <button bindtap='login'>登录</button>
+      <button bindtap='loginMsgs'>短信验证码登录</button>
+      <view class="tip">
+        <navigator url="../reg/reg"><text>注册</text></navigator>
+        <navigator><text>忘记密码？</text></navigator>
+      </view>
+    </view> 
+  </view>
+  <view wx:else class="login" name="msg">
+    <view class="col">
+      <label wx:for="{{loginMsg}}" wx:key="{{index}}" class="flex">
+        <text>{{item.label}}:</text>
+        <input class="{{item.size}}"></input>
+        <view wx:if="{{item.btn}}">
+          <button wx:for="{{item.btns}}" wx:key="{{idx}}" wx:for-index="idx" wx:for-item="b">{{b.text}}</button>
+        </view>
+      </label>
+      <button>登录</button>
+      <button>短信验证码登录</button>
+      <view class="tip">
+        <navigator><text>忘记密码？</text></navigator>
+      </view>
+    </view>
+  </view>
+  <view class="login-type col">
+    <text>第三方登录</text>
+    <view>
+      <view wx:for="{{type}}" wx:key="{{index}}" class="login-type-image">
+        <image src="{{item.img}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

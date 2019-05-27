@@ -1,0 +1,88 @@
+/**index.wxss**/
+.header{
+  margin-bottom: 32rpx;
+}
+.top{
+  height: 120rpx;
+  background: #f4f4f4;
+  align-items: center;
+  justify-content: center;
+}
+.top > icon{
+  display: block;
+  position: absolute;
+  left: 75rpx;
+}
+.top > input{
+  width: 425rpx; height: 75rpx; 
+  background: #fff;
+  border-radius: 16px;
+  padding-left: 95rpx;
+}
+.top > view{
+  width: 200rpx; height: 75rpx;
+  font-size: 25rpx; color: #fff;
+  background: #67a4ff;
+  border-radius: 24px;
+  justify-content: center;
+  margin-left: 40rpx;
+  line-height: 75rpx;
+}
+.top > view > span{
+  margin: auto 8rpx;
+}
+.nav, .sub-nav{
+  width: 725rpx; 
+  color: #7d7d7d; 
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav{
+  height: 100rpx;
+  font-size: 40rpx;
+}
+.sub-nav{
+  height: 180rpx;
+}
+.sub-nav image{
+  width: 100rpx; height: 100rpx;
+  border: #f4f4f4 1px solid;
+}
+.sub-nav text{
+  width: 100rpx; 
+  text-align: center;
+}
+.banner{
+  height: 384rpx;
+  white-space: nowrap;
+  margin-left: -16rpx;
+}
+.banner image{
+  width: 384rpx; height: 384rpx;
+  margin-left: 16rpx;
+  border-radius: 8px;
+}
+.cont{
+  width: 680rpx;
+  margin: 0 auto;
+  border-top: 5rpx solid #67a4ff;
+}
+.cont > text:first-child{
+  font-size: 36rpx; color: #67a4ff; font-weight: bold;
+  line-height: 96rpx;
+}
+.lession-list view{
+  padding: 0 24rpx 24rpx 24rpx;
+}
+.lession-list image{
+  width: 260rpx; height: 180rpx;
+  margin-right: 24rpx;
+}
+.lession-list text{
+  width: 360rpx; height: 180rpx;
+  display: inline-block;
+  word-wrap:break-word;
+  color: #444; font-size: 32rpx;
+  line-height: 42rpx;
+}
